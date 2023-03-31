@@ -11,7 +11,6 @@ import { ArticleDetailsComponent } from './articles/article-details/article-deta
 import { LatestArticlesComponent } from './articles/latest-articles/latest-articles.component';
 import { FeaturedArticlesComponent } from './articles/featured-articles/featured-articles.component';
 import { CategoriesComponent } from './articles/categories/categories.component';
-import { ArticlesModule } from './articles/articles.module';
 
 @NgModule({
   declarations: [
@@ -28,7 +27,6 @@ import { ArticlesModule } from './articles/articles.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ArticlesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
