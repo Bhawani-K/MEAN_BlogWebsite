@@ -13,6 +13,8 @@ import { LatestArticlesComponent } from './articles/latest-articles/latest-artic
 import { FeaturedArticlesComponent } from './articles/featured-articles/featured-articles.component';
 import { CategoriesComponent } from './articles/categories/categories.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     LatestArticlesComponent,
     FeaturedArticlesComponent,
     CategoriesComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    AboutUsComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
