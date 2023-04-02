@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { ArticlesRoutingModule } from "./articles/articles-routing-module";
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -11,6 +12,7 @@ import { ArticleDetailsComponent } from './articles/article-details/article-deta
 import { LatestArticlesComponent } from './articles/latest-articles/latest-articles.component';
 import { FeaturedArticlesComponent } from './articles/featured-articles/featured-articles.component';
 import { CategoriesComponent } from './articles/categories/categories.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -22,11 +24,13 @@ import { CategoriesComponent } from './articles/categories/categories.component'
     ArticleDetailsComponent,
     LatestArticlesComponent,
     FeaturedArticlesComponent,
-    CategoriesComponent
+    CategoriesComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    ArticlesRoutingModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
